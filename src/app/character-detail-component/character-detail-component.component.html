@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="card col-6 p-1" *ngIf="character">
+    <div class="card">
+        <div class="card-header">
+            {{character.name}}
+        </div>
+        <div class="card-body">
+            <div class="form-group row">
+                <div class="col-12">
+                    {{character.birth_year}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    {{character.gender}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    {{character.skin_color}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    {{character.hair_color}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    {{character.height}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    {{character.mass}}
+                </div>
+            </div>
+            <button (click)="list()" class="btn btn-primary">Back to List</button>
+        </div>
+    </div>
+    </div>

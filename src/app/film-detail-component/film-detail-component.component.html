@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="card col-6 p-1" *ngIf="film">
+    <div class="card">
+        <div class="card-header">
+            {{film.title}}
+        </div>
+        <div class="card-body">
+            <div class="form-group row">
+                <div class="col-12">
+                    {{film.opening_crawl}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    {{film.director}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    {{film.producer}}
+                </div>
+            </div>
+            <button (click)="list()" class="btn btn-primary">Back to List</button>
+        </div>
+    </div>
+    </div>
