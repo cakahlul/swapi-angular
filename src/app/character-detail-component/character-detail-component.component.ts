@@ -23,7 +23,7 @@ export class CharacterDetailComponentComponent implements OnInit {
     
     this.characterService.getDetailCharacter(this.id)
       .subscribe(data => {
-        this.characterService = data;
+        this.character = data;
       }, error => console.log(error));
   }
 

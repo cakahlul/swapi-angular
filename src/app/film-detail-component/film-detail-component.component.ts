@@ -23,7 +23,7 @@ export class FilmDetailComponentComponent implements OnInit {
     
     this.filmService.getDetailFilms(this.id)
       .subscribe(data => {
-        this.filmService = data;
+        this.film = data;
       }, error => console.log(error));
   }
 
